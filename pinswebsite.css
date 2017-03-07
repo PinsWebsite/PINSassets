@@ -1,1 +1,8 @@
-//css starts here
+body {
+
+	background: rgb(241, 123, 175);
+}
+
+ .img-responsive{
+	margin: auto;
+}
