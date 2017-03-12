@@ -12,8 +12,5 @@ section p {
     line-height: 1.5;
     margin-bottom: 35px;
     padding-top: 60px;
-}
-
-#contact {
-	padding-top: 500px;
+    padding-bottom: 500px;
 }
