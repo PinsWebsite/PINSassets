@@ -1,11 +1,17 @@
 body {
 
 	background: rgb(241, 123, 175);
+  font-family: "Helvetica Neue";
+  font-weight: 100;
 }
 
  .img-responsive{
 	margin: auto;
 }
+
+
+
+
 
 section p {
 	font-size: 30px;
