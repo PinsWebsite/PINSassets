@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(32, 35, 41,0.8);
   font-family: helvetica;
 }
 
@@ -21,21 +21,32 @@ section p {
   text-align: center;
   color: rgb(0, 0, 0);
   padding: 50px 50px 50px 50px;
+ 
+}
+
+h2 {
+  font-family: helvetica;
+  color: black;
   margin: auto;
 }
 
+#about {
+
+}
 
 #listen {
 text-align: center;
 margin: auto;
-
-
 }
 
-#tourdates
-
-{
+#tourdates {
   text-align: center;
+  margin: auto;
+}
+
+#mailer {
+  margin: auto;
+  padding-bottom: 100px
 }
 
 input {
@@ -50,21 +61,22 @@ input {
     font-family: helvetica;
     font-weight: normal;
     color: black; 
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.1);
   } 
 
 footer {
-background-color: rgba(0, 0, 0, 0.9);
+background-color: rgba(32, 35, 41,0.8);
+margin: 0;
 padding-left: 50px;
 padding-top: 50px;
 padding-bottom: 50px;
 }
 
+
 #social-buttons button {
 color: white;
-align-items: center;
-
 }
+
 .btn-twitter{
 background-color: #00acee;
 border-color: #009ad5;
@@ -77,3 +89,6 @@ border-color: #314776;
 background-color: #b62f26;
 border-color: #b62f26;
 }
+
+
+
