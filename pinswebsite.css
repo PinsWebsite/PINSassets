@@ -1,11 +1,17 @@
 body {
 
 	background: rgb(241, 123, 175);
+  font-family: "Helvetica Neue";
+  font-weight: 100;
 }
 
  .img-responsive{
 	margin: auto;
 }
+
+
+
+
 
 section p {
 	font-size: 30px;
@@ -31,7 +37,7 @@ margin: auto;
 
 html {
   border-top: 5px solid #fff;
-  background: #58DDAF;
+  background: rgb(241, 123, 175);
   color: #2a2a2a;
 }
 
@@ -112,105 +118,3 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
-
-
-
-
-img#albumcover {
-    background-color: rgb(0, 0, 0);
-    background-attachment: fixed;
-    max-width: 100%;
-    width: 400px;
-    color: #fff;
-    font-family: 'Open Sans', 'Arial'
-}
-
-}
-
-.links {
-    display: block;
-}
-a.link {
-    display: inline-block;
-
-    width: 120px;
-    height: 32px;
-    margin: 5px 8px;
-    border: 3px solid #73AD21;
-
-    color: #fff;
-    line-height: 12px;
-    font-weight: 200;
-    border: 1px solid #ee62c2;
-    padding: 10px 10px;
-}
-
-.white-popup {
-  position: relative;
-  background:#1d1433;
-  padding: 20px;
-  width: auto;
-  max-width: 600px;
-  margin: 20px auto;
-}
-/* Float */
-.float {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
-}
-.float:hover, .float:focus, .float:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-
-}
-/*////////////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////   HOVER for BUTTON/LINKS //////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////////////*/
-
-#buttons {
-    overflow-y:auto;
-    font-size: 12px;
-}
-.white-popup {
-  position: relative;
-  background:#1d1433;
-  padding: 20px;
-  width: auto;
-  max-width: 600px;
-  margin: 20px auto;
-}
-/* Float */
-.floatbuttons {
-  display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
-}
-.floatbuttons:hover {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  background-color: #000;
-
-}
-
-
-#buy {
-    text-align: center;
-    padding: 10px;
-    font-weight: 200;
-    font-size: 14px;
-    letter-spacing: 0px;
-}
-
