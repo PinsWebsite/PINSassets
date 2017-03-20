@@ -5,8 +5,15 @@
 
 <title>Pins Website</title>
 
+<link type="text/css" rel="stylesheet" href="main.css">
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="normalize.css">
 <link type="text/css" rel="stylesheet" href="pinswebsite.css">
+<link type="text/css" rel="stylesheet" href="magnific-popup.css">
+
+
+
+
 
   
 </head>
@@ -29,7 +36,7 @@
             <li class="active"><a href="#about">ABOUT</a></li>
             <li><a href="#listen">LISTEN</a></li>
             <li><a href="#tourdates">TOUR DATES</a></li>
-            <li><a href="#mailer">MAILER</a></li>
+            <li><a href="#buy">MAILING LIST</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -50,7 +57,46 @@
     </div>
 </section>
 
-    <section id="listen"><p>LISTEN<br><iframe src="https://embed.spotify.com/?uri=spotify:user:pinsband:playlist:6iHLNP47aHnnIXkVXfuKvc" width="600" height="280" frameborder="0" allowtransparency="true"></iframe></p></section>
+    <section id="listen"><p>BAD THING<br>
+
+        <!-- /////////////////////////////////////////////////////////-->
+        <!-- //////////////////////album content //////////////////-->
+        <!-- /////////////////////////////////////////////////////////-->
+
+
+<div class="main">
+                   <div class="content">
+                    <br>
+                    <img id="albumcover" src="Albumcover/img/albumcover.png">
+                   </div>
+                    <div id="floatbuttons">
+                    <div id="buy">
+                        <p class="release">PRE-ORDER</p>
+                        <br>
+                        <div class="links">
+
+                            <a href="http://radi.al/BadThingiTunes" class="link floatbuttons" target="_blank">ITUNES</a>
+                            <a href="http://radi.al/BadThingApple" class="link floatbuttons" target="_blank">APPLE MUSIC</a>
+                            <a href="http://radi.al/BadThingSpotify" class="link floatbuttons" target="_blank">SPOTIFY</a>
+                            <a href="http://radi.al/BadThingAmazon" class="link floatbuttons" target="_blank">AMAZON</a>
+                            <a href="http://radi.al/BadThingGoogle" class="link floatbuttons" target="_blank">GOOGLE</a>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+<br>
+
+<!-- /////////////////////////////////////////////////////////-->
+<!--////////////////////////////Player////////////////////////-->
+<!-- /////////////////////////////////////////////////////////-->
+<div> <center>
+<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apinsband%3Aplaylist%3A6iHLNP47aHnnIXkVXfuKvc" width='80%' height='380px' frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+<br>
+
+
+    </p></section>
 
     <section id="tourdates">TOUR DATES<br>
 
@@ -59,7 +105,16 @@
 
     </section>
 
-    <section id="mailer"><p>MAILER<br>
+
+    <div id="buy">
+    <p class="release">KEEP UP WITH LATEST NEWS AND EXCLUSIVES</p>
+    <br>
+    <div class="links">
+        <a href="http://radi.al/BadThingiTunes" class="link floatbuttons" target="_blank">MAILING LIST</a>
+
+    </div>
+</div>
+<br>
 
 
 
@@ -69,12 +124,61 @@
 
 
     </div>
+
+    <!-- /////////////////////////////////////////////////////////-->
+<!-- ////////////////////// Javascript ///////////////////////////-->
+<!-- /////////////////////////////////////////////////////////-->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
     <link type="text/css" rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css">
     
     <script src="js/myjQuery.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.follow_buttons').addClass("hidden");
+
+                $('.follow_buttons').click(function() {
+                    var $this = $(this);
+
+                    if ($this.hasClass("hidden")) {
+                        $(this).removeClass("hidden").addClass("visible");
+
+                    } else {
+                        $(this).removeClass("visible").addClass("hidden");
+                    }
+                });
+            });
+          </script>
+
+          <script type="text/javascript">
+
+        // Pop Up
+            $(document).ready(function() {
+                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                  disableOn: 700,
+                  type: 'iframe',
+                  mainClass: 'mfp-fade',
+                  removalDelay: 160,
+                  preloader: false,
+
+                  fixedContentPos: false
+                });
+              });
+            $('.open-popup-link').magnificPopup({
+              type:'inline',
+              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+        </script>
+
     
 
 
