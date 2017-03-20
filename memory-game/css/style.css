@@ -9,18 +9,18 @@
 }
 
 html, body {
-  height: 100%;
+  height: 40%;
 }
 
 body {
   background: black;
-  min-height: 100%;
+  min-height: 40%;
   font-family: "Arial", sans-serif;
 }
 
 .wrap {
   position: relative;
-  height: 100%;
+  height: 50%;
   min-height: 500px;
   padding-bottom: 20px;
 }
@@ -31,14 +31,14 @@ body {
   -webkit-perspective: 500px;
           perspective: 500px;
   min-height: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 @-webkit-keyframes matchAnim {
   0% {
     background: #bcffcc;
   }
-  100% {
+  50% {
     background: white;
   }
 }
@@ -47,17 +47,17 @@ body {
   0% {
     background: #bcffcc;
   }
-  100% {
+  50% {
     background: white;
   }
-}
 .card {
-  float: left;
-  width: 16.66666%;
-  height: 25%;
-  padding: 5px;
+  float: left; 
+  margin: auto;
+  width: 20%;
+  height: 50%;
+  padding: 50px;
   text-align: center;
-  display: block;
+  display: inline-block;
   -webkit-perspective: 500px;
           perspective: 500px;
   position: relative;
@@ -129,15 +129,15 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .modal {
   display: none;
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   max-height: 90%;
   max-width: 90%;
   min-height: 380px;
