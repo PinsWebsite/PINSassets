@@ -19,6 +19,7 @@ section p {
 }
 
 
+
 #listen {
 text-align: center;
 margin: auto;
@@ -141,7 +142,7 @@ img#albumcover {
     background-color: #000;
     background-attachment: fixed;
     max-width: 100%;
-    width: 700px;
+    width: 300px;
 
 }
 #buy {
