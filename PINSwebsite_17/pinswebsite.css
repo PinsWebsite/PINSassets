@@ -1,15 +1,27 @@
 body {
 
 	background: rgb(241, 123, 175);
+  padding-top: 70px;
 }
 
- .img-responsive{
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: helvetica;
+}
+
+
+img {
 	margin: auto;
 }
 
 section p {
 	font-size: 30px;
-    line-height: 1.5;
+  line-height: 1.5;
+  font-family: helvetica;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 50px 50px 50px 50px;
+  margin: auto;
 }
 
 
@@ -26,24 +38,42 @@ margin: auto;
   text-align: center;
 }
 
+input {
+    border: 0;
+    padding: 10px 10px 10px 10px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: helvetica
+  }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+  input[type="submit"] {
+    font-family: helvetica;
+    font-weight: normal;
+    color: black; 
+    background-color: transparent;
+  } 
 
-html {
-  border-top: 5px solid #fff;
-  background: #58DDAF;
-  color: #2a2a2a;
+footer {
+background-color: rgba(0, 0, 0, 0.9);
+padding-left: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans';
-}
+#social-buttons button {
+color: white;
+align-items: center;
 
-h1 {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
 }
-
+.btn-twitter{
+background-color: #00acee;
+border-color: #009ad5;
+}
+.btn-facebook {
+background-color: #4868ac;
+border-color: #314776;
+}
+.btn-pinterest {
+background-color: #b62f26;
+border-color: #b62f26;
+}
