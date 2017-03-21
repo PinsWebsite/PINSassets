@@ -68,16 +68,8 @@ a:visited{
 }
 
 .main {
-<<<<<<< Updated upstream
-background-color: #000;
-=======
-<<<<<<< HEAD
-background-color: #FFF;
 padding: 20px;
-=======
 background-color: #000;
->>>>>>> origin/master
->>>>>>> Stashed changes
 }
 
 img#albumcover {
