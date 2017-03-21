@@ -9,7 +9,13 @@
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="pinswebsite.css">
 <link rel="stylesheet" href="css/style.css">
+<<<<<<< Updated upstream
 <link rel="stylesheet" href="css/footer.css">
+=======
+<!-- /////////////////////////////////////////////////////////-->
+    <!-- //////////////////////MEMORYCARD //////////////////-->
+    <!-- /////////////////////////////////////////////////////////-->
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
@@ -17,6 +23,7 @@
 
       <link rel="stylesheet" href="memory-game/css/memorycard.css">
 
+>>>>>>> Stashed changes
 
     
 </head>
@@ -177,11 +184,70 @@
 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="PINS" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#000000" data-link-color="rgb(241, 123, 175)" data-popup-background-color="rgba(0,0,0,0)" data-background-color="rgba(0,0,0,0)" data-display-limit="10" data-link-text-color="#000000"></a>
 
 
-</section>
+    </section>
 
 
 <!--MAILER-->
 
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/myjQuery.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.follow_buttons').addClass("hidden");
+
+                $('.follow_buttons').click(function() {
+                    var $this = $(this);
+
+                    if ($this.hasClass("hidden")) {
+                        $(this).removeClass("hidden").addClass("visible");
+
+                    } else {
+                        $(this).removeClass("visible").addClass("hidden");
+                    }
+                });
+            });
+          </script>
+
+          <script type="text/javascript">
+
+        // Pop Up
+            $(document).ready(function() {
+                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                  disableOn: 700,
+                  type: 'iframe',
+                  mainClass: 'mfp-fade',
+                  removalDelay: 160,
+                  preloader: false,
+
+                  fixedContentPos: false
+                });
+              });
+            $('.open-popup-link').magnificPopup({
+              type:'inline',
+              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+        </script>
+
+
+<!--MEMORY-CARD-->
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<<<<<<< Updated upstream
+
+</body>
+=======
+    <script src="memory-game/js/index.js"></script>
+>>>>>>> Stashed changes
+
+<body class="mailer">
 <section id="mailer"><h1>NEWSLETTER</h1><br>
 
 <div class="container">
@@ -194,6 +260,12 @@
 </div>
 
 </section>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End Mailer-->
 
 </body>
 <footer><p>
@@ -238,62 +310,3 @@
 
 </footer>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--End Mailer-->
-
-
-
-<!--MEMORY-CARD-->
- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="memory-game/js/index.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/myjQuery.js"></script>
-
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
-        <script src="https://apis.google.com/js/platform.js"></script>
-        <script src="js/jquery.magnific-popup.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.follow_buttons').addClass("hidden");
-
-                $('.follow_buttons').click(function() {
-                    var $this = $(this);
-
-                    if ($this.hasClass("hidden")) {
-                        $(this).removeClass("hidden").addClass("visible");
-
-                    } else {
-                        $(this).removeClass("visible").addClass("hidden");
-                    }
-                });
-            });
-          </script>
-
-          <script type="text/javascript">
-
-          
-        // Pop Up
-            $(document).ready(function() {
-                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-                  disableOn: 700,
-                  type: 'iframe',
-                  mainClass: 'mfp-fade',
-                  removalDelay: 160,
-                  preloader: false,
-
-                  fixedContentPos: false
-                });
-              });
-            $('.open-popup-link').magnificPopup({
-              type:'inline',
-              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-            });
-
-            </script>
