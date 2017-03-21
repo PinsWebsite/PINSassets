@@ -68,7 +68,16 @@ a:visited{
 }
 
 .main {
+<<<<<<< Updated upstream
 background-color: #000;
+=======
+<<<<<<< HEAD
+background-color: #FFF;
+padding: 20px;
+=======
+background-color: #000;
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 }
 
 img#albumcover {
@@ -152,8 +161,6 @@ a.link {
 
 
 
-
-
 #about {
 
 }
@@ -164,15 +171,6 @@ a.link {
   margin: auto;
   max-width: 50%;
 }
-
-
-
-
-
-
-
-
-
 
 
 #mailer {
@@ -194,13 +192,6 @@ input {
     color: black; 
     background-color: rgba(0,0,0,0.1);
   } 
-
-
-
-
-
-
-
 
 
 footer {
