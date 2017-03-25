@@ -2,6 +2,7 @@ body {
   font-family: Permanent Marker;
 	background: rgb(241, 123, 175);
   padding-top: 70px;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -41,8 +42,10 @@ section p {
 }
 
 h2 {
-  color: black;
+  font-size: 30px;
+  color: #000;
   text-align: center;
+  background-color: rgb(241, 123, 175);
 }
 
 
@@ -83,7 +86,8 @@ a:visited{
 }
 
 .main {
-padding: 20px;
+padding-top: 50px;
+padding-bottom: 50px;
 background-color: #000;
   border-radius: 8px;
 }
@@ -166,7 +170,6 @@ a.link {
   background-color: #ff69d0;
 
 }
-
 
 
 
