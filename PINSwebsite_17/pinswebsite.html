@@ -78,22 +78,19 @@
   <li class="match2">
        <img src="memorygame/css/img/PINSlilac.png"
   </li>
-  <li class="match1">
-    <img src="memorygame/css/img/PINSgreen.png"
-  </li>
-  <li class="match2">
-    <img src="memorygame/css/img/PINSlilac.png"
-
-<br>
-
-     </li>
-     <br>
-    <li class="match3">
+  <li class="match3">
       <img src="memorygame/css/img/PINSpink.png"
       </li>
      <li class="match4">
         <img src="memorygame/css/img/PINSyellow.png"
      </li>
+
+  <li class="match1">
+    <img src="memorygame/css/img/PINSgreen.png"
+  </li>
+  <li class="match2">
+    <img src="memorygame/css/img/PINSlilac.png"
+    </li>
     <li class="match3">
     <img src="memorygame/css/img/PINSpink.png"
     </li>
@@ -107,6 +104,13 @@
 </div>
 
 
+ <center> <div class="reset-button">
+      <a id="restart" href="">Reset game</a>
+      </center>
+    </div>
+
+ <br>
+  <br>
 
      <!-- /////////////////////////////////////////////////////////-->
         <!-- //////////////////////album content //////////////////-->
@@ -292,22 +296,32 @@
 
 
 </div>
+<!--spotify API BUTTON-->
+<script async src="//jsfiddle.net/JMPerez/j1sqq4g0/embed/"></script>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--memorygame-->
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
 <script src="memorygame/js/jquery.flip.min.js" /></script>
 <script src="memorygame/js/jquery.quizymemorygame.js" /></script>
 
-<script>
-$('#my-memorygame').quizyMemoryGame({itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:5, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true});
-</script>
+  
+  <script>
+    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true, randomised:true }; 
+    $('#my-memorygame').quizyMemoryGame(quizyParams);
+    $('#restart').click(function(){
+      $('#my-memorygame').quizyMemoryGame('restart');
+      return false;
+    });
+  </script>
 
-
-<!--spotify API BUTTON-->
-<script async src="//jsfiddle.net/JMPerez/j1sqq4g0/embed/"></script>
-
-
+</body>
 
 <!--End Mailer-->
 
