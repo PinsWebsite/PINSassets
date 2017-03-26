@@ -43,4 +43,38 @@ jQuery(document).ready(function ($) {
         moveRight();
     });
 
-});    
+});  
+
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////   SPOTIFY API BUTTON //////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
+
+    function followPlaylist(accessToken, playlistUri) {
+        var parts = playlistUri.split(':');
+        $.ajax({
+            url: 'hhttps://api.spotify.com/v1/users/pinsband/playlists/6iHLNP47aHnnIXkVXfuKvc/followers',
+            headers: {
+               'Authorization': 'Bearer ' + BQA5_DSa3pZefUYqrQ2XltlziSQdVTRSRJNLS7z8-_Qp-k0RnUSDwpY_GmOaN1HqVW2LaxGnLEt8ZFjGg9E4DirMood-B3B77PANeOSeMvWdI88opfqT20X8Qz99jbqITM_Ab9SePobEYGebs7szqop0i9zjtNlzz-x_NoQqhVvpngPwhOcd
+            },
+            method: 'PUT',
+            success: function() {
+                followButton.textContent = 'Following';
+            },
+            dataType: 'html',
+            error: function(e) {
+                console.error(e);
+            }
+        });
+    }
+
+    var followButton = document.getElementById('btn-follow'),
+        playlistUriInput = document.getElementById('playlist-uri');
+    
+    followButton.addEventListener('click', function() {
+        login(function(accessToken) {
+            followPlaylist(accessToken, playlistUriInput.value);
+        });
+    });
+    
+}();
