@@ -305,12 +305,13 @@
 <!--memorygame-->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
+
 <script src="memorygame/js/jquery.flip.min.js" /></script>
 <script src="memorygame/js/jquery.quizymemorygame.js" /></script>
   
   <script>
-    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true, randomised:true }; 
+    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:false, randomised:true }; 
     $('#my-memorygame').quizyMemoryGame(quizyParams);
     $('#restart').click(function(){
       $('#my-memorygame').quizyMemoryGame('restart');
