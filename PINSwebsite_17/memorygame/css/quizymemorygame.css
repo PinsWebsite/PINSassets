@@ -14,49 +14,13 @@
   width:100%;
 
 
-<<<<<<< Updated upstream
-  
-=======
-}
-
-li.match1 {
- 
- border: solid black;
-  border-radius: 8px;
-
-
-}
-
-li.match2 {
- 
- border: solid black;
-  border-radius: 8px;
-
-
->>>>>>> Stashed changes
-}
-
-li.match3 {
- 
- border: solid black;
-  border-radius: 8px;
-
-}
-
-
-li.match4 {
- 
- border: solid black;
-  border-radius: 8px;
-
-}
-
 
 /* styles of the card to show */
 .quizy-memorygame .mgcard-show{
   width:156px;
   height:156px;
   background:url('img/mg-mcard.png');
+
 }
 
 .quizy-memorygame .quizy-mg-item{
@@ -101,7 +65,7 @@ li.match4 {
 
 /* styles for the game summary */
 #quizy-game-summary {
-  width:400px;
+  width:300px;
   height:250px;
   position: absolute;
   margin: auto;
