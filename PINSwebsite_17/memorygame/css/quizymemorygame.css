@@ -3,6 +3,8 @@
  Author: Yane Frenski
 */
 
+
+
 /* the stle for the wrapper element */
 .quizy-memorygame{
   position:relative;
@@ -10,8 +12,6 @@
   left: 20%;
   right: 50%;
   width:100%;
-
-
 
 
   
@@ -60,6 +60,8 @@
 .quizy-mg-notification-fly-pos{
   background:url('img/quizy-mg-notif-pos.png');
 }
+
+
 
 /* styles for the game summary */
 #quizy-game-summary {

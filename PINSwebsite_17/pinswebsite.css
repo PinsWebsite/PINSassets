@@ -38,8 +38,6 @@ margin-top: 20px;
   height: 100%;
 }
 
-
-
 section p {
 	font-size: 40px;
   line-height: 1.5;
@@ -65,7 +63,6 @@ h2 {
 {
   background-color:rgb(241, 123, 175);
  
-
 
 }
 
@@ -207,6 +204,8 @@ a.link {
   max-width: 50%;
 }
 
+
+
 footer {
   font-family: helvetica;
 }
@@ -223,10 +222,16 @@ input {
 /*////////////////////////////   MAILING LIST SECTION//////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
+h1 {
+  font-size: 40px;
+  color: black;
+}
+
+
+
+
 .mailer {
 font-size: 15px;
-
-
-
+font-family: Permanent Marker;
 }
 
