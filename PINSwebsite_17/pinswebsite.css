@@ -25,6 +25,17 @@ body {
     top: -40px;
 }
 
+.socials a {
+  float: right;
+  text-decoration: none;
+  padding: 0px 20px 0px 0px;
+  position: relative;
+
+
+  }
+
+
+
 
 .jumbotron {
 background: rgb(241, 123, 175);
