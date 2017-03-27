@@ -60,85 +60,26 @@
 
 /* Footer social icons */
 
-@import url('http://weloveiconfonts.com/api/?family=entypo');
-
-
-
-.footer .box {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  line-height: 50px;
-  font-family: Entypo;
-  font-size: 28px;
-  text-align: center;
-  color: #555;
-  border-radius: 10px;
-  background: #eee;
-  overflow: hidden;
-  cursor: pointer;
-  transition: .30s;
-  box-shadow: rgb(210, 210, 210) 1px 1px,
-    rgb(210, 210, 210) 2px 2px,
-    rgb(211, 211, 211) 3px 3px,
-    rgb(211, 211, 211) 4px 4px,
-    rgb(211, 211, 211) 5px 5px,
-    rgb(212, 212, 212) 6px 6px,
-    rgb(212, 212, 212) 7px 7px,
-    rgb(212, 212, 212) 8px 8px,
-    rgb(213, 213, 213) 9px 9px,
-    rgb(213, 213, 213) 10px 10px,
-    rgb(214, 214, 214) 11px 11px,
-    rgb(214, 214, 214) 12px 12px,
-    rgb(214, 214, 214) 13px 13px,
-    rgb(215, 215, 215) 14px 14px,
-    rgb(215, 215, 215) 15px 15px,
-    rgb(215, 215, 215) 16px 16px,
-    rgb(216, 216, 216) 17px 17px,
-    rgb(216, 216, 216) 18px 18px,
-    rgb(216, 216, 216) 19px 19px,
-    rgb(217, 217, 217) 20px 20px,
-    rgb(217, 217, 217) 21px 21px,
-    rgb(218, 218, 218) 22px 22px,
-    rgb(218, 218, 218) 23px 23px,
-    rgb(218, 218, 218) 24px 24px,
-    rgb(219, 219, 219) 25px 25px,
-    rgb(219, 219, 219) 26px 26px,
-    rgb(219, 219, 219) 27px 27px,
-    rgb(220, 220, 220) 28px 28px,
-    rgb(220, 220, 220) 29px 29px,
-    rgb(221, 221, 221) 30px 30px;
-}
-.footer .box:hover {
-	transition: .30s;
-	color: white;	
-}
-#facebook:hover {
-	background-color: #3a5795;
-}
-#twitter:hover {
-	background-color: #00acee;
-}
-#google:hover {
-	background-color: #dd4b39;
-}
-#linkedin:hover {
-	background-color: #0e76a8
-}
-#dribbble:hover {
-	background-color: #ea4c89;
-}
-#pinterest:hover {
-	background-color: #c8232c;
-}
-#vimeo:hover {
-	background-color: #86c9ef;
-}
-#paypal:hover {
-	background-color: #3b7bbf;
+.footer .footer-icons{
+	margin-top: 40px;
 }
 
+.footer .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
 
 /* Footer Right */
 
@@ -155,9 +96,7 @@
 	font-size: 20px;
 	text-align: left;
 	padding: 0;
-	font: Permanent Marker;
 }
-
 
 
 
@@ -166,7 +105,7 @@
 @media (max-width: 1000px) {
 
 	.footer {
-		font: bold 14px Permanent Marker;
+		font: bold 14px sans-serif;
 	}
 
 	.footer .footer-company-name{
@@ -200,3 +139,16 @@
 	.footer .footer-left{
 		margin-bottom: 40px;
 	}
+
+	.footer form{
+		margin-top: 30px;
+	}
+
+	.footer form{
+		display: block;
+	}
+
+	.footer form button{
+		float: none;
+	}
+}

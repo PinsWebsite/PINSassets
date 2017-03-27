@@ -5,17 +5,7 @@ jQuery(document).ready(function ($) {
         moveRight();
     }, 3000);
   });
-
- 
-    $(document).ready(function () {
-        $('.flexslider').flexslider({
-            animation: 'fade',
-            controlsContainer: '.flexslider'
-        });
-    });
-</script>
   
-
 	var slideCount = $('#slider ul li').length;
 	var slideWidth = $('#slider ul li').width();
 	var slideHeight = $('#slider ul li').height();
