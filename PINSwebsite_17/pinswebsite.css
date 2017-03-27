@@ -10,11 +10,19 @@ body {
   font-family: Permanent Marker;
   padding: 10px;
   font-size: 25px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
 }
 
 .navbar-brand {
   font-size: 50px;
 
+}
+
+.nav-up {
+    top: -40px;
 }
 
 .jumbotron {

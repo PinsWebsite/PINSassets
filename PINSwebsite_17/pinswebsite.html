@@ -13,6 +13,10 @@
 <link rel="stylesheet" type="text/css" href="memorygame/css/quizymemorygame.css" />
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
+<!--responsive slider-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
     
 </head>
 <!--END HEAD-->
@@ -21,6 +25,7 @@
     <!-- //////////////////////NAVBAR //////////////////-->
     <!-- /////////////////////////////////////////////////////////-->
 <header>
+  <header class="nav-down">
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -59,7 +64,7 @@
 
     </div>
     </div>
-   
+   </div>
 </header>
 <!--END HEADER-->
 
@@ -187,25 +192,21 @@
 <h2> PINS is a punk rock band from Manchester </h2><br>
 
 <!--SLIDER-->
-<div id="slider">
-  <a data-target="#about" class="control_next">>></a>
-  <a data-target="#about" class="control_prev"><</a>
-  <ul>
-    <li>
-    <img src="http://i.imgur.com/YmzElx6.jpg"></li>
-    <li><img src="http://i.imgur.com/BZEBBBl.jpg"></li>
-   <li><img src="http://i.imgur.com/Lf5dzAZ.jpg"></li>
-   <li><img src="http://i.imgur.com/ERKa6p4.jpg"></li>
-   <li><img src="http://i.imgur.com/6IuZzH7.jpg"></li>
-  </ul>
-</div>
-</div>
+ <section class="slider"><div class="slider__inner">
+    <input checked type="radio" name="slider__radiobox" id="slider__radiobox--1" class="slider__radiobox slider__radiobox--1"><label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--1"></label><label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--4"></label><label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--2"></label>
+    <input         type="radio" name="slider__radiobox" id="slider__radiobox--2" class="slider__radiobox slider__radiobox--2"><label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--2"></label><label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--1"></label><label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--3"></label>
+    <input         type="radio" name="slider__radiobox" id="slider__radiobox--3" class="slider__radiobox slider__radiobox--3"><label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--3"></label><label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--2"></label><label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--4"></label>
+    <input         type="radio" name="slider__radiobox" id="slider__radiobox--4" class="slider__radiobox slider__radiobox--4"><label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item--4"></label><label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev--3"></label><label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next--1"></label>
 
-</div> 
+    <div class="slider__slides">
+        <div class="slider__slide slider__slide--1" style="background-image: url(http://i.imgur.com/YmzElx6.jpg);"></div>
+        <div class="slider__slide slider__slide--2" style="background-image: url(http://i.imgur.com/14nWurn.jpg);"></div>
+        <div class="slider__slide slider__slide--3" style="background-image: url(http://i.imgur.com/91UTnmG.jpg);"></div>
+        <div class="slider__slide slider__slide--4" style="background-image: url(http://i.imgur.com/GNvamUm.jpg);"></div>
+    </div><!--.slider__slides-->
+</div><!--.slider__inner--></section><!--.slider-->
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="js/index.js"></script>
-<!--END SLIDER-->
+
 
 </section>
 <br>
@@ -304,6 +305,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<<<<<<< Updated upstream
+=======
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
+<script src="memorygame/js/jquery.flip.min.js" /></script>
+<script src="memorygame/js/jquery.quizymemorygame.js" /></script>
+<script src="/js/navbar.js" /></script>
+>>>>>>> Stashed changes
 
 <!--memorygame-->
 
@@ -322,7 +331,11 @@
     });
   </script>
 
+<<<<<<< Updated upstream
 
+=======
+<!--End Mailer-->
+>>>>>>> Stashed changes
 
 </body>
 

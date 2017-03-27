@@ -1,88 +1,127 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
-
-html {
-  border-top: 5px solid #fff;
-  background: rgb(241, 123, 175);
-  color: #2a2a2a;
-}
-
-
-
-h1 {
-  color: #000;
-  text-align: center;
-  font-weight: 300;
-}
-
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  border-radius: 4px;
-  max-height: 100%;
+.slider {
+  width: 600px;
   max-width: 100%;
-}
-
-#slider ul {
+  max-height: 100%;
+  margin: 0 auto;
   position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
+  background: #eee;
 }
-
-#slider ul li {
+.slider__inner {
   position: relative;
+  margin: 0 auto;
+  padding-top: 50%;
+  overflow: hidden;
+  background: #ddd;
+}
+.slider__slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 400%;
+  height: 100%;
+  overflow-y: hidden;
+  -webkit-transition: margin-left 0.4s;
+  transition: margin-left 0.4s;
+}
+.slider__slide {
   display: block;
   float: left;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  height: 300px;
-  background: #ccc;
-  text-align: center;
-  line-height: 300px;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
 }
-
-#slider ul li img {
-  max-height: 200%;
+.slider__slide img {
+  width: 100%;
   max-width: 100%;
-}
-
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
   height: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
+}
+.slider__radiobox-label {
+  display: block;
+  position: absolute;
+  z-index: 2;
   cursor: pointer;
 }
-
-a.control_prev:hover, a.control_next:hover {
+.slider__radiobox-label--item {
+  bottom: 6%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 6px;
+  border-radius: 50%;
+  background: black;
+  opacity: 0.3;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.slider__radiobox-label--item:hover {
+  opacity: 0.5;
+}
+.slider__radiobox-label--item--1 {
+  margin-left: -36px;
+}
+.slider__radiobox-label--item--2 {
+  margin-left: -12px;
+}
+.slider__radiobox-label--item--3 {
+  margin-left: 12px;
+}
+.slider__radiobox-label--item--4 {
+  margin-left: 36px;
+}
+.slider__radiobox-label--prev, .slider__radiobox-label--next {
+  display: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 0;
+  border: 10px solid black;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  opacity: 0;
+  -webkit-transition: left 0.2s, right 0.2s, opacity 0.2s;
+  transition: left 0.2s, right 0.2s, opacity 0.2s;
+}
+.slider__radiobox-label--prev {
+  left: -6%;
+  border-left: 0;
+  border-right-width: 17px;
+}
+.slider__radiobox-label--next {
+  right: -6%;
+  border-right: 0;
+  border-left-width: 17px;
+}
+.slider__radiobox {
+  display: none;
+}
+.slider__radiobox--1:checked ~ .slider__slides {
+  margin-left: 0;
+}
+.slider__radiobox--2:checked ~ .slider__slides {
+  margin-left: -100%;
+}
+.slider__radiobox--3:checked ~ .slider__slides {
+  margin-left: -200%;
+}
+.slider__radiobox--4:checked ~ .slider__slides {
+  margin-left: -300%;
+}
+.slider__radiobox--1:checked + .slider__radiobox-label--item--1, .slider__radiobox--2:checked + .slider__radiobox-label--item--2, .slider__radiobox--3:checked + .slider__radiobox-label--item--3, .slider__radiobox--4:checked + .slider__radiobox-label--item--4 {
   opacity: 1;
-  -webkit-transition: all 0.2s ease;
 }
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
+.slider__radiobox--1:checked ~ .slider__radiobox-label--prev--4, .slider__radiobox--1:checked ~ .slider__radiobox-label--next--2, .slider__radiobox--2:checked ~ .slider__radiobox-label--prev--1, .slider__radiobox--2:checked ~ .slider__radiobox-label--next--3, .slider__radiobox--3:checked ~ .slider__radiobox-label--prev--2, .slider__radiobox--3:checked ~ .slider__radiobox-label--next--4, .slider__radiobox--4:checked ~ .slider__radiobox-label--prev--3, .slider__radiobox--4:checked ~ .slider__radiobox-label--next--1 {
+  display: block;
 }
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
+.slider:hover .slider__radiobox-label--prev,
+.slider:hover .slider__radiobox-label--next {
+  opacity: 1;
 }
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
+.slider:hover .slider__radiobox-label--prev {
+  left: 6%;
+}
+.slider:hover .slider__radiobox-label--next {
+  right: 6%;
 }
