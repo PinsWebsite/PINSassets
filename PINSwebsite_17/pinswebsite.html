@@ -80,6 +80,9 @@
 <!--END HEADER-->
 
 
+<body>
+
+
 
 
      <!-- /////////////////////////////////////////////////////////-->
@@ -169,19 +172,15 @@
 
 <center><p class="player">Follow our playlist on Spotify</p></center>
 
+
 <!-- /////////////////////////////////////////////////////////-->
 <!--////////////////////////////Spotify API button////////////////////////-->
 <!-- /////////////////////////////////////////////////////////-->
-<center>
-<div class="container">
-    
- <button class="btn btn-primary" id="btn-follow">Follow</button>
 
- </center>
+<div class="spotifyplayer">
+<center><iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:2kbO657SWC6kiO1Dni3ook&size=basic&theme=light&show-count=0" width="100" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe></center>
 </div>
-
 <br>
-
 <div> <center>
 <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apinsband%3Aplaylist%3A6iHLNP47aHnnIXkVXfuKvc" width='30%' height='380px' frameborder="0" allowtransparency="true"></iframe>
 </div>
@@ -190,9 +189,6 @@
 
 
 <br>
-
-
-<body>
 
 <section id="about"><p>ABOUT</p>
 <div class="container">
@@ -332,15 +328,18 @@
 
 <script src="memorygame/js/jquery.flip.min.js" /></script>
 <script src="memorygame/js/jquery.quizymemorygame.js" /></script>
-  
-  <script>
-    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:false, randomised:true, gameSummary:true }; 
+
+
+<script>
+    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:70, colCount:4, animType:'scroll' , flipAnim:'tb', animSpeed:150, resultIcons:false, randomised:true, gameSummary:true, openDelay:1500 }; 
     $('#my-memorygame').quizyMemoryGame(quizyParams);
     $('#restart').click(function(){
       $('#my-memorygame').quizyMemoryGame('restart');
       return false;
     });
   </script>
+  
+
 
 
 
