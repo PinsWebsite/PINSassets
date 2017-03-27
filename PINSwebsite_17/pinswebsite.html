@@ -6,11 +6,11 @@
 
 <title>Pins Website</title>
 
+<link rel="stylesheet" type="text/css" href="memorygame/css/quizymemorygame.css" />
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="pinswebsite.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" type="text/css" href="memorygame/css/quizymemorygame.css" />
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 <!--responsive slider-->
@@ -82,9 +82,6 @@
 
 <body>
 
-
-
-
      <!-- /////////////////////////////////////////////////////////-->
      <!-- //////////////////////memorygame //////////////////-->
         <!-- /////////////////////////////////////////////////////////-->
@@ -140,9 +137,14 @@
 <section id="badthing">
 <div class="container">
 <div class="main">
+
+
+
                    <div class="content">
+
+
                     <br>
-                    <center><img id="albumcover" src="../Albumcover/img/albumcover.png"></center>
+                    <center><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwearepins%2Fvideos%2F1292665370813537%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" data-autoplay="true"></iframe></center>
                    </div>
                    <br>
                     <div id="floatbuttons">
@@ -331,7 +333,7 @@
 
 
 <script>
-    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:70, colCount:4, animType:'scroll' , flipAnim:'tb', animSpeed:150, resultIcons:false, randomised:true, gameSummary:true, openDelay:1500 }; 
+    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:70, colCount:4, animType:'scroll' , flipAnim:'tb', animSpeed:150, resultIcons:false, randomised:true, gameSummary:false, openDelay:1500 }; 
     $('#my-memorygame').quizyMemoryGame(quizyParams);
     $('#restart').click(function(){
       $('#my-memorygame').quizyMemoryGame('restart');
