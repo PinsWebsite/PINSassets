@@ -223,8 +223,16 @@ footer {
 /*////////////////////////////   SPOTIFY API BUTTON //////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
-.spotifyplayer{
-margin: auto;
+.spotify{
+background-color: #000;
+border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  margin:auto;
+
+
+}
 
 
 }
