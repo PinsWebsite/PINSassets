@@ -25,7 +25,6 @@ body {
     top: -40px;
 }
 
-<<<<<<< HEAD
 
 
 div.socials a {
@@ -34,11 +33,10 @@ div.socials a {
   padding: 0px 20px 0px 0px;
   position: relative;
     transition: top 0.2s ease-in-out; 
-    color: 9d9d9d;
 }
 
 div.socials a:link {
-  color: #9d9d9d;
+  color: #fff;
 }
 
 div.socials a:hover {
@@ -49,8 +47,6 @@ div.socials a:visited {
   color: #fff;
 }
 
-=======
->>>>>>> origin/master
 .jumbotron {
 background: rgb(241, 123, 175);
 margin-top: 20px;
@@ -83,25 +79,16 @@ h2 {
 /*////////////////////////////   memory-game //////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
+p.memorygame {
+font-size: 30px;
+margin: auto;
 
-.my-memorygame
-
-{
-  background-color:rgb(241, 123, 175);
- 
-
-<<<<<<< Updated upstream
-}
-
-.reset-button {
-  font-size: 20px;
-  color: black;
 
 
 }
 
-=======
->>>>>>> Stashed changes
+
+
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////   albumcover //////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
@@ -168,7 +155,12 @@ p.release {
     padding: 0;
 }
 
+video{
 
+width: 300px;
+height: 300px;
+
+}
 
 .links {
     display: block;
@@ -238,10 +230,24 @@ a.link {
 footer {
   font-family: helvetica;
 }
-=======
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////   SPOTIFY API BUTTON //////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
+
+.spotify{
+background-color: #000;
+border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  margin:auto;
+  background-attachment: fixed;
+
+
+}
+
+
+}
 
 input {
     width: 400px;
