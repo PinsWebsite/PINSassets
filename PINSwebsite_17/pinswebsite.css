@@ -25,17 +25,27 @@ body {
     top: -40px;
 }
 
-.socials a {
+
+
+div.socials a {
   float: right;
   text-decoration: none;
   padding: 0px 20px 0px 0px;
   position: relative;
+    transition: top 0.2s ease-in-out; 
+}
 
+div.socials a:link {
+  color: #fff;
+}
 
-  }
+div.socials a:hover {
+  color: #fff;
+}
 
-
-
+div.socials a:visited {
+  color: #fff;
+}
 
 .jumbotron {
 background: rgb(241, 123, 175);
