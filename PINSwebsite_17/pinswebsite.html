@@ -52,14 +52,6 @@
             <li><a href="#tourdates">TOUR DATES</a></li>
             <li><a href="#mailer">MAILING LIST</a></li>
 
-<div class="footer-icons">
-
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-          <a href="#"><i class="fa fa-tumblr"></i></a>
-
-  </div>
 
           </ul>
         </div><!--/.nav-collapse -->
@@ -229,7 +221,7 @@
 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="PINS" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#000000" data-link-color="rgb(241, 123, 175)" data-popup-background-color="rgba(0,0,0,0)" data-background-color="rgba(0,0,0,0)" data-display-limit="10" data-link-text-color="#000000"></a>
 
 
-    </section>
+</section>
 
 
 <!--MAILER-->
@@ -248,7 +240,7 @@
    <input type="email" placeholder="Enter your email">
    <input type="submit">
 
-   </center>
+</center>
 
 </div>
 
@@ -258,88 +250,9 @@
 </div>
 
 </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/myjQuery.js"></script>
-
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
-        <script src="https://apis.google.com/js/platform.js"></script>
-        <script src="js/jquery.magnific-popup.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.follow_buttons').addClass("hidden");
-
-                $('.follow_buttons').click(function() {
-                    var $this = $(this);
-
-                    if ($this.hasClass("hidden")) {
-                        $(this).removeClass("hidden").addClass("visible");
-
-                    } else {
-                        $(this).removeClass("visible").addClass("hidden");
-                    }
-                });
-            });
-          </script>
-
-          <script type="text/javascript">
-
-        // Pop Up
-            $(document).ready(function() {
-                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-                  disableOn: 700,
-                  type: 'iframe',
-                  mainClass: 'mfp-fade',
-                  removalDelay: 160,
-                  preloader: false,
-
-                  fixedContentPos: false
-                });
-              });
-            $('.open-popup-link').magnificPopup({
-              type:'inline',
-              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-            });
-
-        </script>
-
-<!--spotify API BUTTON-->
-<script async src="//jsfiddle.net/JMPerez/j1sqq4g0/embed/"></script>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
-<script src="memorygame/js/jquery.flip.min.js" /></script>
-<script src="memorygame/js/jquery.quizymemorygame.js" /></script>
-<script src="/js/navbar.js" /></script>
-
-<!--memorygame-->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
-
-<script src="memorygame/js/jquery.flip.min.js" /></script>
-<script src="memorygame/js/jquery.quizymemorygame.js" /></script>
-  
-  <script>
-    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:false, randomised:true, gameSummary:true }; 
-    $('#my-memorygame').quizyMemoryGame(quizyParams);
-    $('#restart').click(function(){
-      $('#my-memorygame').quizyMemoryGame('restart');
-      return false;
-    });
-  </script>
-
-
 <!--End Mailer-->
 
+<!--FOOTER-->
 <footer class="footer-distributed">
 
       <div class="footer-left">
@@ -370,15 +283,94 @@
 
       <div class="footer-right">
 
-        <p>Contact Us</p>
+        <h3>Contact Us</h3><br>
+        <p class="footer-links">
+        +44 (0)7478254440 & pins@badpins.co.uk. </p>
+        
+
+    </form>
+  </div>
+</footer>
+<!--END FOOTER-->
+
+<!--JAVASCRIPT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/myjQuery.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.follow_buttons').addClass("hidden");
+
+                $('.follow_buttons').click(function() {
+                    var $this = $(this);
+
+                    if ($this.hasClass("hidden")) {
+                        $(this).removeClass("hidden").addClass("visible");
+
+                    } else {
+                        $(this).removeClass("visible").addClass("hidden");
+                    }
+                });
+            });
+          </script>
+
+          <script type="text/javascript">
+
+// Pop Up
+    $(document).ready(function() {
+                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                  disableOn: 700,
+                  type: 'iframe',
+                  mainClass: 'mfp-fade',
+                  removalDelay: 160,
+                  preloader: false,
+
+                  fixedContentPos: false
+                });
+              });
+            $('.open-popup-link').magnificPopup({
+              type:'inline',
+              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+        </script>
+
+<!--spotify API BUTTON-->
+<script async src="//jsfiddle.net/JMPerez/j1sqq4g0/embed/"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
+<script src="memorygame/js/jquery.flip.min.js" /></script>
+<script src="memorygame/js/jquery.quizymemorygame.js" /></script>
+<script src="/js/navbar.js" /></script>
+
+<!--memorygame-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" /></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" /></script>
+<script src="memorygame/js/jquery.flip.min.js" /></script>
+<script src="memorygame/js/jquery.quizymemorygame.js" /></script>
+
+<script>
+    var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:false, randomised:true, gameSummary:true }; 
+    $('#my-memorygame').quizyMemoryGame(quizyParams);
+    $('#restart').click(function(){
+      $('#my-memorygame').quizyMemoryGame('restart');
+      return false;
+    });
+</script>
 
 
 
-        </form>
 
-      </div>
-
-    </footer>
 </body>
 
 

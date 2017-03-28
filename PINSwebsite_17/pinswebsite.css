@@ -229,13 +229,65 @@ input {
 h1 {
   font-size: 40px;
   color: black;
+  text-align: center;
+}
+
+/* The contact form */
+
+.mailer form{
+  display: inline-block;
+}
+
+.mailer form input,
+.mailer form textarea{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+
+  width: 400px;
+  padding: 18px;
+}
+
+.mailer ::-webkit-input-placeholder {
+  color:  #5c666b;
+}
+
+.mailer ::-moz-placeholder {
+  color:  #5c666b;
+  opacity: 1;
+}
+
+.mailer :-ms-input-placeholder{
+  color:  #5c666b;
 }
 
 
+.mailer form input{
+  height: 55px;
+  margin-bottom: 15px;
+}
 
+.mailer form textarea{
+  height: 100px;
+  margin-bottom: 20px;
+}
 
-.mailer {
-font-size: 15px;
-font-family: Permanent Marker;
+.mailer form button{
+  border-radius: 3px;
+  background-color:  #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: center;
 }
 
