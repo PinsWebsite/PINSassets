@@ -144,7 +144,12 @@ p.release {
     padding: 0;
 }
 
+video{
 
+width: 300px;
+height: 300px;
+
+}
 
 .links {
     display: block;
